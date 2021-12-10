@@ -66,8 +66,8 @@ async def start(bot, cmd):
    reply_markup=InlineKeyboardMarkup(
     [
      [
-      InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38"),
-      InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38")
+      InlineKeyboardButton("Support Group", url="https://t.me/renegadesforever"),
+      InlineKeyboardButton("Renegade", url="https://t.me/cp_renegade")
      ],
      [
       InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -80,7 +80,7 @@ async def start(bot, cmd):
   try:
    file_id = int(usr_cmd)
    send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL, message_ids=file_id)
-   #await send_stored_file.reply_text(f"**Here is Sharable Link of this file:** https://telegram.dog/{BOT_USERNAME}?start=moviezcafe38_{file_id}\n\n__To Retrive the Stored File, just open the link!__", disable_web_page_preview=True, quote=True)
+   #await send_stored_file.reply_text(f"**Here is Sharable Link of this file:** https://telegram.dog/{BOT_USERNAME}?start=Renegade_{file_id}\n\n__To Retrive the Stored File, just open the link!__", disable_web_page_preview=True, quote=True)
   except Exception as err:
    await cmd.reply_text(f"Something went wrong!\n\n**Error:** {err}")
 
@@ -97,7 +97,7 @@ async def main(bot, message):
     f"Your File Stored in my Database!\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
     parse_mode="Markdown",
     reply_markup=InlineKeyboardMarkup(
-     [[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38"), InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38")]]
+     [[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Renegade", url="https://t.me/cp_renegade"), InlineKeyboardButton("Support Group", url="https://t.me/renegadesforever")]]
    
    
     ),
@@ -121,7 +121,7 @@ async def main(bot, message):
   try:
    forwarded_msg = await message.forward(DB_CHANNEL)
    file_er_id = forwarded_msg.message_id
-   share_link = f"https://telegram.dog/{BOT_USERNAME}?start=moviezcafe38_{file_er_id}"
+   share_link = f"https://telegram.dog/{BOT_USERNAME}?start=Renegade_{file_er_id}"
    CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id, reply_markup=InlineKeyboardMarkup([InlineKeyboardButton("Get Sharable Stored Link", url=share_link)]]))
    if message.chat.username:
     await forwarded_msg.reply_text(f"#CHANNEL_BUTTON:\n\n[{message.chat.title} Channel's Broadcasted File's Button Added!")
@@ -242,8 +242,8 @@ async def button(bot, cmd: CallbackQuery):
    reply_markup=InlineKeyboardMarkup(
     [
      [
-      InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38"),
-      InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38")
+      InlineKeyboardButton("Support Group", url="https://t.me/renegadesforever"),
+      InlineKeyboardButton("Renegade", url="https://t.me/cp_renegade")
      ],
      [
       InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -294,8 +294,8 @@ async def button(bot, cmd: CallbackQuery):
    reply_markup=InlineKeyboardMarkup(
     [
      [
-      InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38"),
-      InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38")
+      InlineKeyboardButton("Support Group", url="https://t.me/renegadesforever"),
+      InlineKeyboardButton("Renegade", url="https://t.me/cp_renegade")
      ],
      [
       InlineKeyboardButton("About Bot", callback_data="aboutbot"),
