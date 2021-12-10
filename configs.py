@@ -22,7 +22,7 @@ class Config(object):
 This is Permanent Files Store Bot of [*☂️Renegades☂️**](https://t.me/cp_renegade)
 
 
-🤖 **My Name:** [You Know Already 😉]
+🤖 **My Name:** [You Know Already 😉](http://t.me/rene_filestore01_bot)
 
 
 
