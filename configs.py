@@ -50,4 +50,5 @@ Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot** of [Renegade](
 
 
 Owned By [Team Renegades](https://t.me/cp_renegade)
-Check about bot button
+Check **About Bot** Button.
+"""
