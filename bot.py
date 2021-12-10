@@ -116,31 +116,31 @@ async def start(bot, cmd):
 
 			disable_web_page_preview=True,
 
-			reply_markup=InlineKeyboardMarkup(
+			
 
-				[
+				
 
-					[
+					
 
 						InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38"),
 
 						InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38")
 
-					],
+					
 
-					[
+					
 
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
 
-					]
+					
 
-				]
+				
 
-			)
+			
 
-		)
+		
 
 	else:
 
@@ -184,11 +184,11 @@ async def main(bot, message):
 
 					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38"), InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38")]]
 
-				),
+				
 
 				disable_web_page_preview=True
 
-			)
+			
 
 		except Exception as err:
 
@@ -264,7 +264,7 @@ async def broadcast_(c, m):
 
 	    text = f"Broadcast Started! You will be notified with log file when all the users are notified."
 
-	)
+	
 
 	start_time = time.time()
 
@@ -286,7 +286,7 @@ async def broadcast_(c, m):
 
 	    success = success
 
-	)
+	
 
 	async with aiofiles.open('broadcast.txt', 'w') as broadcast_log_file:
 
@@ -334,9 +334,9 @@ async def broadcast_(c, m):
 
 	                    success = success
 
-	                )
+	                
 
-	            )
+	            
 
 	if broadcast_ids.get(broadcast_id):
 
@@ -356,7 +356,7 @@ async def broadcast_(c, m):
 
 	        quote=True
 
-	    )
+	    
 
 	else:
 
@@ -368,7 +368,7 @@ async def broadcast_(c, m):
 
 	        quote=True
 
-	    )
+	    
 
 	await os.remove('broadcast.txt')
 
@@ -398,21 +398,21 @@ async def button(bot, cmd: CallbackQuery):
 
 			reply_markup=InlineKeyboardMarkup(
 
-				[
+				
 
-					[
+					
 
 						InlineKeyboardButton("Go Home", callback_data="gotohome"),
 
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
 
-					]
+					
 
-				]
+				
 
-			)
+			
 
-		)
+		
 
 	elif "aboutdevs" in cb_data:
 
@@ -426,21 +426,21 @@ async def button(bot, cmd: CallbackQuery):
 
 			reply_markup=InlineKeyboardMarkup(
 
-				[
+				
 
-					[
+					
 
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 
 						InlineKeyboardButton("Go Home", callback_data="gotohome")
 
-					]
+					
 
-				]
+				
 
-			)
+			
 
-		)
+		
 
 	elif "gotohome" in cb_data:
 
@@ -454,29 +454,29 @@ async def button(bot, cmd: CallbackQuery):
 
 			reply_markup=InlineKeyboardMarkup(
 
-				[
+				
 
-					[
+					
 
 						InlineKeyboardButton("Support Group", url="https://t.me/moviez_cafe_38"),
 
 						InlineKeyboardButton("Moviez Café™", url="https://t.me/moviezcafe38")
 
-					],
+					
 
-					[
+					
 
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
 
-					]
+					
 
-				]
+				
 
-			)
+			
 
-		)
+		
 
 	elif "refreshmeh" in cb_data:
 
@@ -498,7 +498,7 @@ async def button(bot, cmd: CallbackQuery):
 
 						disable_web_page_preview=True
 
-					)
+					
 
 					return
 
@@ -510,7 +510,7 @@ async def button(bot, cmd: CallbackQuery):
 
 					reply_markup=InlineKeyboardMarkup(
 
-						[
+						
 
 							[
 
@@ -524,13 +524,13 @@ async def button(bot, cmd: CallbackQuery):
 
 							]
 
-						]
+						
 
-					),
+					
 
 					parse_mode="markdown"
 
-				)
+				
 
 				return
 
@@ -544,7 +544,7 @@ async def button(bot, cmd: CallbackQuery):
 
 					disable_web_page_preview=True
 
-				)
+				
 
 				return
 
@@ -558,7 +558,7 @@ async def button(bot, cmd: CallbackQuery):
 
 			reply_markup=InlineKeyboardMarkup(
 
-				[
+				
 
 					[
 
@@ -576,9 +576,9 @@ async def button(bot, cmd: CallbackQuery):
 
 					]
 
-				]
+				
 
-			)
+			
 
 		)
 
